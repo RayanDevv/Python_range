@@ -1,0 +1,54 @@
+
+#range avec intervalle, ici on affiche les nbrs impairs de 0 à 10
+
+debut = 1
+stop = 10
+intervalle = 2
+print("\n")
+print(list(range(debut, stop, intervalle)))
+
+
+
+
+
+#ça marche aussi pour les nbrs négatifs
+
+debut = 0
+arret = -11
+intervalle = -2
+print("\n")
+print(list(range(debut, arret, intervalle)))
+print("\n")
+
+
+
+
+'''Afficher le patern suivant : 
+
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5
+'''
+
+
+
+print("Arborercence continue en ajoutant 1 à chaque ligne... ")
+lastNumber = 6
+for ligne in range(1, lastNumber):
+    for colone in range(1, ligne + 1):
+        print(colone, end=' ')
+    print("")
+print ("....... \n")
+
+
+
+
+#Le user donne un nombre et on a sa table de multiplication
+
+n = int(input("Donner un nombre pour calculer sa table de multiplication : "))
+for i in range(1, 11, 1):
+    product = n*i
+    print(product)
+
